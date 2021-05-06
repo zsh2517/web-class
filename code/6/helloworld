@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+XXX: Server: MyPython Server
+XXX: Content-Type: text/html; charset=UTF-8
+XXXDate: Thu, 22 Apr 2021 03:05:00 GMT   
+XXXConnection: keep-alive
+XXXVary: Accept-Encoding
+XXXStrict-Transport-Security: max-age=31536000
+XXXTransfer-Encoding: chunked
+
+<b>123</b>

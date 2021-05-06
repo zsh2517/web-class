@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+    /* font-family: "lucida grande","lucida sans unicode",lucida,helvetica,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;; */
+    font-family: "consolas", "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+    color: rgba(47, 47, 47);
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+}
+
+.nav {
+    height: 100%;
+    width: 30%;
+    max-width: 300px;
+    background-color: #66CCFF;
+}
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+.nav-item {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    border-bottom: 1px dashed #d1f1e9;
+    color: white;
+    padding-top: 15px;
+    font-size: 20px;
+    height: 30px;
+    font-size: x-large;
+}
+
+.nav-item:hover {
+    font-weight: 900;
+}
+.nav-item:hover::before {
+    /* content: "· "; */
+}
+
+.main {
+    width: -webkit-fill-available;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.header {
+    /* padding: 15px; */
+    padding: 45px 45px 10px 45px;
+    /* height: 80px; */
+    /* background-color: gray; */
+    border-bottom: 1px dashed #92a8a3;
+}
+
+.header-title {
+    font-size: xx-large;
+}
+
+.header-meta {
+    margin-top: 10px;
+    color: grey;
+}
+
+.article {
+    padding: 15px 45px 10px 45px;
+    font-size: larger;
+    line-height: 1.6em;
+}
+
+.avatar {
+    width: 50%; 
+    border-radius: 50%;
+    margin: calc(25% - 5px);
+    margin-bottom: 10%;
+    border: 5px solid #FFF;
+}
+
+.username {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+.username::before {
+    content: "@";
+}
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 15px;
+    border-left: 3px lightgray solid;
+}
+
+pre {
+    /* border: 1px solid brown; */
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    line-height: 1.3em;
+    overflow-x: auto;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+code {
+    padding: 3px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 3px;
+}

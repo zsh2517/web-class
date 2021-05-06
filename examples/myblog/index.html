@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="https://tools.zsh2517.com/testimg/avatar/0.jpg" class="avatar" />
+            <div class="username">zsh2517</div>
+            <ul>
+                <li class="nav-item">菜单1</li>
+                <li class="nav-item">菜单2</li>
+                <li class="nav-item">菜单3</li>
+                <li class="nav-item">菜单4</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="header-title">
+                    通俗解释流的概念
+                </div>
+                <div class="header-meta">
+                    分类：分类 #Tag 1# #Tag 2#
+                </div>
+
+            </div>
+            <div class="article">
+                <blockquote>
+                    原文链接：<a href="https://blog.zsh2517.com/?p=348">通俗解释流的概念</a>
+                </blockquote>
+                <blockquote>
+                    希望这个不鸽，后面持续更新 --- zsh2517
+                </blockquote>
+                <h2>0x00 写在前面</h2>
+                <b>为什么要写这个？</b>
+
+                <blockquote>
+                    Q: 你看看这个题，怎样把数据全都进去然后处理？<br />
+                    A: 为什么要全都读进去？<br />
+                    Q: 看这个输入输出，输入是连着的，然后才统一输出...<br />
+                    因为经常有人问我比如某个题目，输出是在一块的（输入一个区域，输出一个区域），怎么才能全读进去/是不是必须全都读进去啊？<br />
+
+                </blockquote>
+                <p>
+                    如果上面的对话没看明白，看一下比如一个例题
+                </p>
+                <p>
+                <blockquote>
+                    <b>题目描述</b><br />
+                    第一行输入一个n，是数据的组数<br />
+                    之后每行输入两个数ai, bi (1
+                    <= i <=n)<br />
+                    输出每行两个数的和<br />
+                    <b>输入</b><br />
+                    2<br />
+                    1 4<br />
+                    2 8<br />
+                    <b>输出</b><br />
+                    5<br />
+                    10<br />
+                    <b>题干不是这么给的输入输出 (<code>→|</code> 输入 <code>←|</code> 输出)</b><br />
+                    →|3<br />
+                    →|1 4<br />
+                    ←|5<br />
+                    →|2 8<br />
+                    ←|10<br />
+                    那么能不能写一个程序，读入组数之后，每次读入两个数，然后输出一个结果，读入两个数，然后输出一个结果。类似于下面这样<br />
+                    而不是把<code>2 1 4 2 8</code>全部存下来再运算一块输出<code>5 10</code>呢？<br />
+
+                </blockquote>
+                </p>
+
+                <p>
+                    <b>说明</b></br />
+                    由于这个是面向<b>初学编程</b>的，因此尽量减少了专业性，同时避免了一些特殊情况的出现，如果有不准确的还望指正。<br />
+                </p>
+
+                <h2>0x10 什么是流</h2>
+                <p>
+                    简单来说是有顺序的一串字节的序列。这串序列可以连续地读写。<br />
+                    （类似于磁带，只能按顺序播放，否则就要倒带等等）<br />
+                <h2>0x20 输入流与输出流</h2>
+                <p>
+                在学过的C/C++/python(视情况)中，先不考虑文件读写，那么一个程序的所有的交互就是通过<b>键盘输入</b>和<b>屏幕显示</b>这两块实现的。<br />
+                例如 C 语言的 <code>printf</code> <code>scanf</code>，C++ 的 <code>cin</code> <code>cout</code>，python 的<code>input</code> <code>print</code>实现的。（后面的例子均提供C语言和python的，C++参考C语言）<br />
+                这时如果把程序看作一个黑匣子（不考虑程序的实际功能），那么可以认为是下面的结构<br />
+                </p>
+                <!-- <code> -->
+                    <pre>
+               |      |
+============== |      | ==============
+   键盘输入 -> | 程序 | -> 屏幕输出
+============== |      | ==============
+               |      |</pre>
+                <!-- </code> -->
+                <p>
+                    即对于我们的程序来说，只有一个输入，一个输出口。程序从输入口读进去，然后从输出口写（输出）出来。
+                    无论是键盘输入的数据，还是程序输出的数据，本质都是一串字节序列。即上面提到的“流”。
+                    <b>记住这个图形，输入和输出不同的口（或者说是两个不同的方向）</b>
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
