@@ -101,7 +101,7 @@ class client_thread(threading.Thread):
         }
 
     def response_example(self, code, data):
-        t = f"HTTP/1.1 {code} OK\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n{data}"
+        t = f"HTTP/1.1 {code} OK\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n{data}\r\n"
         return t.encode("utf-8")
 
 
