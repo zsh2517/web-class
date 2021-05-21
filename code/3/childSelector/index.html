@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="before.css">
+    <style>
+        .box1>.box2 {
+            background-color: green;
+        }
+
+        .box1 .box2 {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="after.css">
+</head>
+
+<body>
+    <div>
+        box1 > box2: background-color: green;<br>
+        box1 box2: color: red;<br>
+    </div>
+    <hr>
+    <div class="box1">
+        <div class="box2">box2 is a child of box1</div>
+        <div>
+            <div class="box2">box2 is a child of box1's child</div>
+        </div>
+    </div>
+</body>
+
+</html>

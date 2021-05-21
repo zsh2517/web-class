@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <input class="btn" type="button" id="btn1" value="点这里">
+    <input class="btn" type="button" id="btn2" value="点这里">
+    <input class="btn" type="button" id="btn3" value="点这里">
+    <input class="bbb" type="button" id="btn4" value="点这里">
+</body>
+<script>
+    $(document).ready(function () {
+        $(".btn").click(function (e) {
+            alert("you clicked the button: #" + e.target.id);
+        });
+        $(".bbb").click(() => {
+            alert("You click the last button, and it will send a click to the first");
+            $("#btn1").click();
+        })
+    });
+</script>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        margin: 10px;
+        background-color: lightgray;
+
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* 排序方式，分别是从左到右，从右到左，从上到下，从下到上 */
+
+        flex-wrap: wrap;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* 是否允许折行 */
+
+        justify-content: flex-start;
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* 空余排布方式：靠左、靠右、居中、两端对齐中间平分（0:2:2:2:0）和包括两边平分（1:2:2:2:1） */
+
+        align-items: flex-start;
+        /* align-items: flex-end; */
+        /* align-items: center; */
+    }
+
+    .block-box {
+        display: block;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        border: 2px solid black;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .block-box-number {
+        padding: 40%;
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="block-box">
+            <div class="block-box-number">1</div>
+        </div>
+        <div class="block-box">
+            <div class="block-box-number">2</div>
+        </div>
+        <div class="block-box">
+            <div class="block-box-number">3</div>
+        </div>
+        <div class="block-box" style="height: 150px;">
+            <div class="block-box-number">4</div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="block-box" style="order: 10;">
+            <div class="block-box-number">1</div>
+        </div>
+        <div class="block-box">
+            <div class="block-box-number">2</div>
+        </div>
+        <div class="block-box">
+            <div class="block-box-number">3</div>
+        </div>
+        <div class="block-box" style="height: 150px;">
+            <div class="block-box-number">4</div>
+        </div>
+    </div>
+</body>
+
+</html>
