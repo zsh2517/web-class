@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .shell-box {
+        background: darkblue;
+        color: white;
+        font-family: monospace;
+        height: 300px;
+        width: 800px;
+        font-size: large;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .command {
+        margin-top: 10px;
+    }
+    .command:before {
+        content: "zsh2517@device > "
+    }
+    .reply:after {
+        content: "\A";
+        white-space: pre;
+    }
+    h1:before,h2:before,h3:before,h4:before,h5:before,h6::before {
+        content: "§ ";
+        white-space: pre;
+    }
+</style>
+<body>
+    <div class="shell-box">
+        <div class="command">ls</div>
+        <div class="reply">. .. a b c</div>
+        <div class="command">whoami</div>
+        <div class="reply">zsh2517</div>
+        <div class="command">python hello.py world</div>
+        <div class="reply">Hello world!</div>
+    </div>
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h1>一级标题</h1>
+</body>
+</html>

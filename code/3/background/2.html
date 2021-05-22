@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .testbox {
+        height: 300px;
+        width: 50%;
+        max-width: 700px;
+        min-width: 300px;
+        border: 2px solid red;
+        border-radius: 10px;
+        background: url("../../../src/test-bgimg.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+<body>
+    一般显示一些自定义（不确定比例）内容的时候会这么做。<br>
+    比如这张图，大小是 16:9，但是随着缩放，会尽可能多的在 7:3 ~ 1:1 内显示。<br>
+    很多时候如果有需要用户上传图片，且完全铺满图片框的时候会这么做<br>
+    <pre>
+        .testbox {
+            height: 300px;
+            width: 50%;
+            max-width: 700px;
+            min-width: 300px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background: url("../../../src/test-bgimg.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    </pre>
+    <div class="testbox">
+
+    </div>
+</body>
+</html>

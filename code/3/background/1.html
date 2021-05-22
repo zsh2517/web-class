@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+    .box2 {
+        height: 400px;
+        margin: 200px 20px;
+    }
+</style>
+
+<body>
+    <div class="box" style="background-color: gray">
+        背景色: background-color: gray;
+    </div>
+    <div class="box" style="background-color: red">
+        背景色: background-color: red;
+        <div class="box" style="background-color: rgba(0, 255, 0, 0.5);">
+            背景色: background-color: rgba(0, 255, 0, 0.5);
+        </div>
+    </div>
+    <img src="https://zsh2517.com/images/bg0.jpg" width="50%">
+    <div class="box2" style="background: url('https://zsh2517.com/images/bg0.jpg')"></div>
+    <div class="box2" style="background: url('https://zsh2517.com/images/bg0.jpg'); background-size: cover"></div>
+    <div class="box2" style="background: url('https://zsh2517.com/images/bg0.jpg'); background-size: contain"></div>
+    <div class="box2" style="background: url('https://zsh2517.com/images/bg0.jpg'); background-size: contain; background-repeat: no-repeat;"></div>
+</body>
+
+</html>
