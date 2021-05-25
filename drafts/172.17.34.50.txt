@@ -1,0 +1,31 @@
+GET / HTTP/1.1
+Host: 172.17.34.50
+Connection: keep-alive
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 24 May 2021 09:00:19 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"14e-20a-606b3c08"
+Last-Modified: Mon, 05 Apr 2021 16:34:16 GMT
+Content-Encoding: gzip
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="refresh" content="0; URL=cgi-bin/luci/" />
+</head>
+<body style="background-color: white">
+<a style="color: black; font-family: arial, helvetica, sans-serif;" href="cgi-bin/luci/">LuCI - Lua Configuration Interface</a>
+</body>
+</html>
